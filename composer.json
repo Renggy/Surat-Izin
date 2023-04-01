@@ -1,0 +1,20 @@
+{
+    "name": "rengggy/surat-izin",
+    "description": "package for export from html to docs",
+    "type": "project",
+    "license": "GPL",
+    "autoload": {
+        "psr-4": {
+            "Rengggy\\SuratIzin\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Renggy Nikiuluw",
+            "email": "59325214+Renggy@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpword": "^1.0"
+    }
+}
