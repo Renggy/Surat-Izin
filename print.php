@@ -23,12 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         'orang_tua'         => ucwords(strtolower($orangtua)),
     ]);
     $nameFile = md5(uniqid(rand(), true)) . ".docx";
-    // $template->saveAs($nameFile);
+    $template->saveAs($nameFile);
 
     // Download File
     header('Content-Description: File Transfer');
     header("Content-Disposition: attachment; filename={$nameFile}");
     header("Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document");
     readfile($nameFile);
-    // unlink($nameFile);
+    unlink($nameFile);
 }
