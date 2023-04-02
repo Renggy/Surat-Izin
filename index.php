@@ -104,13 +104,6 @@
                                         <label class="form-label">Perihal Izin</label>
                                         <textarea name="perihal_izin" class="form-control"></textarea>
                                     </div>
-                                    <div class="mb-2">
-                                        <label class="form-label">Status Izin</label>
-                                        <select name="status_izin" class="form-control">
-                                            <option value="1">Mengizinkan</option>
-                                            <option value="2">Tidak Mengizinkan</option>
-                                        </select>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -136,7 +129,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-primary float-end">Generate</button>
+                    <button class="btn btn-primary float-end">Download</button>
                 </div>
             </div>
 
