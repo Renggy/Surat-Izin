@@ -17,7 +17,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         'child_gender'      => $_POST['child_gender'] == 1 ? "Laki - Laki" : "Perempuan",
         'child_address'     => $_POST['child_address'] ?? '-',
         'perihal_izin'      => $_POST['perihal_izin'] ?? '-',
-        'status_izin'       => $_POST['status_izin'] == 1 ? "mengizinkan" : "tidak mengizinkan",
         'ttd_location'      => $_POST['ttd_location'] ?? '-',
         'ttd_date'          => $_POST['ttd_date'] ? date('d F Y', strtotime($_POST['ttd_date'])) : '-',
         'orang_tua'         => ucwords(strtolower($orangtua)),
